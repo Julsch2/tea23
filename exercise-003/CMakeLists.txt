@@ -32,3 +32,4 @@ add_custom_command(TARGET ${PROJECT_NAME}
     POST_BUILD
     COMMAND size --format=sysv  ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/${PROJECT_NAME}
 )
+

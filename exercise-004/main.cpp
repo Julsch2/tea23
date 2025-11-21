@@ -3,6 +3,7 @@
 
 #include "CLI/CLI.hpp"
 #include "config.h"
+#include "image.h"
 
 auto main(int argc, char **argv) -> int
 {
@@ -28,7 +29,12 @@ auto main(int argc, char **argv) -> int
      */
     fmt::print("Hello, {}!\n", app.get_name());
 
-    /* INSERT YOUR CODE HERE */
+    // print length of array 
+    int length_img_array = sizeof(image)/sizeof(image[0]);
+    fmt::print("Länge des Arrays: {}", length_img_array);
+
+    
+    
 
 
     return 0; /* exit gracefully*/
